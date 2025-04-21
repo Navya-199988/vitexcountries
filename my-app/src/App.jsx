@@ -34,7 +34,8 @@ function App() {
                 const jsonRes = await res.json();
                 setCountries(jsonRes);
             } catch(error){
-                console.error("fetching data:" + error)
+              console.error("Error fetching data:", error); // ✅ now it will match
+
             };
             
             
